@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2023-09-29 11:11:48.750668",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-11-06 11:07:34.427365",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "New WMS QA to QA Lead Reassignment",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_by",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{frappe.session.user}} assigned a new task {{doc.name}} to you",
+ "value_changed": "assigned_by"
+}

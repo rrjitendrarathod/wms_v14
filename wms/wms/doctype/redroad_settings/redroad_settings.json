@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-05 20:28:06.777293",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "roles_access",
+  "hr_roles_table",
+  "column_break_yuin2",
+  "wms_roles_table",
+  "section_break_npl8o",
+  "modules_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "roles_access",
+   "fieldtype": "Section Break",
+   "label": "Roles Access"
+  },
+  {
+   "fieldname": "hr_roles_table",
+   "fieldtype": "Table",
+   "label": "HR Roles Table",
+   "options": "Roles Table"
+  },
+  {
+   "fieldname": "column_break_yuin2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wms_roles_table",
+   "fieldtype": "Table",
+   "label": "WMS Roles Table",
+   "options": "Roles Table"
+  },
+  {
+   "fieldname": "section_break_npl8o",
+   "fieldtype": "Section Break",
+   "label": "Modules Access"
+  },
+  {
+   "fieldname": "modules_table",
+   "fieldtype": "Table",
+   "label": "Modules Table",
+   "options": "Modules Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-06 20:14:07.699744",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "RedRoad Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

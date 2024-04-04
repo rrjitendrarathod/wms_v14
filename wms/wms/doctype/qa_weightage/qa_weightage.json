@@ -1,0 +1,676 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-08-17 14:52:21.294419",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_tab",
+  "naming_series",
+  "medical_coder_flow",
+  "mr_number_qa",
+  "assessment_type",
+  "coder_name",
+  "team_lead",
+  "rebutal_status",
+  "column_break_5",
+  "payor_type",
+  "payor_type_hchb",
+  "qa",
+  "qa_lead",
+  "production_completed_date",
+  "chart_status",
+  "section_break_49",
+  "coding_totoal_errors",
+  "oasis_total_erros",
+  "oasis",
+  "total_errors",
+  "column_break_55",
+  "total_coordination",
+  "grand_total",
+  "error_type_classification",
+  "section_break_59",
+  "total_score",
+  "column_break_61",
+  "pass_",
+  "comments_section",
+  "coding_comments",
+  "coding_tab",
+  "coding_section",
+  "q1",
+  "q2",
+  "q3",
+  "coding_weight__points",
+  "column_break_12",
+  "q4",
+  "q5",
+  "qx",
+  "coding_score",
+  "oasis_tab",
+  "oasis_section",
+  "q7",
+  "q8",
+  "q9",
+  "q10",
+  "q11",
+  "q12",
+  "q13",
+  "q14",
+  "q15",
+  "q16",
+  "q17",
+  "q18",
+  "q19",
+  "q20",
+  "q21",
+  "q22",
+  "q23",
+  "q24",
+  "oasis_weight__points",
+  "column_break_21",
+  "q25",
+  "q26",
+  "q27",
+  "q28",
+  "q29",
+  "q30",
+  "q31",
+  "q32",
+  "q33",
+  "q34",
+  "q35",
+  "q36",
+  "q37",
+  "q38",
+  "q39",
+  "q40",
+  "q41",
+  "q42",
+  "oasis_score",
+  "coordination_note_tab",
+  "coordination_note_section",
+  "q43",
+  "coordination_note_points",
+  "column_break_50",
+  "coordination_note_score",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_coder_flow",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Coder Flow",
+   "options": "Medical Coder Flow",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "medical_coder_flow.payor_type",
+   "fieldname": "payor_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payor Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medical_coder_flow.assessment_type",
+   "fieldname": "assessment_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coding_section",
+   "fieldtype": "Section Break",
+   "label": "Coding"
+  },
+  {
+   "fieldname": "q1",
+   "fieldtype": "Select",
+   "label": "Is the primary diagnosis the focus of care?",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q2",
+   "fieldtype": "Select",
+   "label": "Are symptom codes or questionable encounter diagnosis appropriate?",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q3",
+   "fieldtype": "Select",
+   "label": "Does the coding on the 485 follow coding convention?",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q4",
+   "fieldtype": "Select",
+   "label": "Does the coding on the 485 follow coding guidelines?",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "depends_on": "eval:(doc.payor_type ==\"Commercial\" && doc.assessment_type ==\"Recert\") || (doc.payor_type ==\"Commercial\" && doc.assessment_type ==\"Followup\") || (doc.payor_type ==\"Commercial\" && doc.assessment_type ==\"SCIC\") || (doc.payor_type ==\"Commercial\" && doc.assessment_type ==\"SOC\") || (doc.payor_type ==\"Others\" && doc.assessment_type ==\"Followup\") || (doc.payor_type ==\"Others\" && doc.assessment_type ==\"SCIC\") ||  (doc.payor_type ==\"Others\" && doc.assessment_type ==\"Recert\") || (doc.payor_type ==\"Others\" && doc.assessment_type ==\"SOC\") || (doc.payor_type ==\"Managed - Medicare\" && doc.assessment_type ==\"Followup\") || (doc.payor_type ==\"Managed - Medicare\" && doc.assessment_type ==\"SCIC\") ||  (doc.payor_type ==\"Managed - Medicare\" && doc.assessment_type ==\"Recert\") || (doc.payor_type ==\"Managed - Medicare\" && doc.assessment_type ==\"SOC\") || (doc.payor_type ==\"Managed - Medicaid\" && doc.assessment_type ==\"Followup\") || (doc.payor_type ==\"Managed - Medicaid\" && doc.assessment_type ==\"SCIC\") ||  (doc.payor_type ==\"Managed - Medicaid\" && doc.assessment_type ==\"Recert\") || (doc.payor_type ==\"Managed - Medicaid\" && doc.assessment_type ==\"SOC\") || (doc.payor_type ==\"Medicaid\" && doc.assessment_type ==\"Followup\") || (doc.payor_type ==\"Medicaid\" && doc.assessment_type ==\"SCIC\") ||  (doc.payor_type ==\"Medicaid\" && doc.assessment_type ==\"Recert\") || (doc.payor_type ==\"Medicaid\" && doc.assessment_type ==\"SOC\")",
+   "fieldname": "q5",
+   "fieldtype": "Select",
+   "label": "Have the appropriate  co-morbidity diagnosis  been coded?",
+   "options": "Yes-All correct\nNo-1 are wrong\nNo-2 are wrong\nNo-3 are wrong\nNo-4 are wrong\nNo-5 are wrong\nNo-6 are wrong\nNo-7 are wrong\nNo-8 are wrong\nNo-9 are wrong\nNo-10 are wrong"
+  },
+  {
+   "fieldname": "q7",
+   "fieldtype": "Select",
+   "label": "M0069 Gender",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q8",
+   "fieldtype": "Select",
+   "label": "M1005- Inpatient discharge date",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q11",
+   "fieldtype": "Select",
+   "label": "M0150 Current Payment Sources for Home Care",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q12",
+   "fieldtype": "Select",
+   "label": "M1033",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q13",
+   "fieldtype": "Select",
+   "label": "K0520 - Nutritional Approaches",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q14",
+   "fieldtype": "Select",
+   "label": "N0415: High -Risk Drug Classes: Use and Indication",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q15",
+   "fieldtype": "Select",
+   "label": "     Pressure (M1306, M1311, M1322, M1324)",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q16",
+   "fieldtype": "Select",
+   "label": "     Stasis (M1330, M1332, M1334)",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q17",
+   "fieldtype": "Select",
+   "label": "     Surgical (M1340, M1342)",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q18",
+   "fieldtype": "Select",
+   "label": "M1400 - When is the patient dyspneic or noticeably short of breath?",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q19",
+   "fieldtype": "Select",
+   "label": "M1600",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q20",
+   "fieldtype": "Select",
+   "label": "M1610",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q21",
+   "fieldtype": "Select",
+   "label": "M1620",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q22",
+   "fieldtype": "Select",
+   "label": "M1630",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q23",
+   "fieldtype": "Select",
+   "label": "M1700",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q24",
+   "fieldtype": "Select",
+   "label": "M1710",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q26",
+   "fieldtype": "Select",
+   "label": "M1740",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QA Weightage",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "oasis_section",
+   "fieldtype": "Section Break",
+   "label": "OASIS"
+  },
+  {
+   "fieldname": "coding_weight__points",
+   "fieldtype": "Float",
+   "label": "Coding Weight  Points",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coding_score",
+   "fieldtype": "Float",
+   "label": "Coding Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "oasis_weight__points",
+   "fieldtype": "Float",
+   "label": "OASIS Weight  Points",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "oasis_score",
+   "fieldtype": "Float",
+   "label": "OASIS Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coordination_note_section",
+   "fieldtype": "Section Break",
+   "label": "Coordination Note"
+  },
+  {
+   "fieldname": "coordination_note_points",
+   "fieldtype": "Float",
+   "label": "Coordination Note Points",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coordination_note_score",
+   "fieldtype": "Float",
+   "label": "Coordination Note Score",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "comments_section",
+   "fieldtype": "Section Break",
+   "label": "Comments "
+  },
+  {
+   "fieldname": "coding_comments",
+   "fieldtype": "Small Text",
+   "label": "QA Comments "
+  },
+  {
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break",
+   "label": "QA Score"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_errors",
+   "fieldtype": "Float",
+   "label": "Total Errors",
+   "read_only": 1
+  },
+  {
+   "default": "100.00",
+   "fieldname": "total_score",
+   "fieldtype": "Float",
+   "label": "Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "No Error",
+   "fieldname": "error_type_classification",
+   "fieldtype": "Data",
+   "label": "Error Type Classification",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "coding_totoal_errors",
+   "fieldtype": "Float",
+   "label": "Coding SectionError ",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "oasis_total_erros",
+   "fieldtype": "Float",
+   "label": "Oasis Section Error ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_coordination",
+   "fieldtype": "Float",
+   "label": "Coordination Section Error",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_59",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.payor_type ==\"Medicare\" && doc.assessment_type ==\"Followup\") || (doc.payor_type ==\"Medicare\" && doc.assessment_type ==\"ROC\") || (doc.payor_type ==\"Medicare\" && doc.assessment_type ==\"SCIC\") ||  (doc.payor_type ==\"Medicare\" && doc.assessment_type ==\"Recert\")|| (doc.payor_type ==\"Medicare\" && doc.assessment_type ==\"SOC\") || (doc.payor_type ==\"Commercial\" && doc.assessment_type ==\"ROC\") || (doc.payor_type ==\"Managed - Medicare\" && doc.assessment_type ==\"ROC\")|| (doc.payor_type ==\"Managed - Medicaid\" && doc.assessment_type ==\"ROC\") || (doc.payor_type ==\"Medicaid\" && doc.assessment_type ==\"ROC\")  ||(doc.payor_type ==\" Medicare\" && doc.assessment_type ==\"ROC\") || (doc.payor_type ==\" Others\" && doc.assessment_type ==\"ROC\")",
+   "fieldname": "qx",
+   "fieldtype": "Select",
+   "label": "Have the appropriate  co-morbidity diagnosis  been coded?",
+   "options": "Yes-All correct\nNo-1 are wrong\nNo-2 are wrong\nNo-3 are wrong\nNo-4 are wrong\nNo-5 are wrong\nNo-6 are wrong\nNo-7 are wrong\nNo-8 are wrong\nNo-9 are wrong\nNo-10 are wrong\nNo-11 are wrong\nNo-12 are wrong\nNo-13 are wrong\nNo-14 are wrong\nNo-15 are wrong\nNo-16 are wrong\nNo-17 are wrong\nNo-18 are wrong\nNo-19 are wrong\nNo-20 are wrong\nNo-21 are wrong\nNo-22 are wrong\nNo-23 are wrong\nNo-24 are wrong"
+  },
+  {
+   "fetch_from": "medical_coder_flow.mr_number",
+   "fieldname": "mr_number_qa",
+   "fieldtype": "Data",
+   "label": "MR Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "oasis",
+   "fieldtype": "Data",
+   "label": "Oasis Error",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total Error Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Reference ID",
+   "options": "QAW.####"
+  },
+  {
+   "fieldname": "q9",
+   "fieldtype": "Select",
+   "label": "M0102 - Date of Physician Ordered SOC (ROC)",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q10",
+   "fieldtype": "Select",
+   "label": "M0104 - Date of Referral",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q25",
+   "fieldtype": "Select",
+   "label": "M1720",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q27",
+   "fieldtype": "Select",
+   "label": "M1745",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q28",
+   "fieldtype": "Select",
+   "label": "M1800 Grooming",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q29",
+   "fieldtype": "Select",
+   "label": "M1810 Upper Body Dressing",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q30",
+   "fieldtype": "Select",
+   "label": "M1820-Lower Body Dressing",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q31",
+   "fieldtype": "Select",
+   "label": "M1830 - Bathing",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q32",
+   "fieldtype": "Select",
+   "label": "M1840-Toilet Transferring",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q33",
+   "fieldtype": "Select",
+   "label": "M1845-Toileting Hygiene",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q34",
+   "fieldtype": "Select",
+   "label": "M1850 - Transfers",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q35",
+   "fieldtype": "Select",
+   "label": "M1860 - Ambulation / Locomotion",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q36",
+   "fieldtype": "Select",
+   "label": "M1870- Feeding or Eating",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q37",
+   "fieldtype": "Select",
+   "label": "GG0130 Self care",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q38",
+   "fieldtype": "Select",
+   "label": "GG0170 Mobility",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q39",
+   "fieldtype": "Select",
+   "label": "M2020 - Management of Oral Medications",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q40",
+   "fieldtype": "Select",
+   "label": "M2030 - Management of injectable medications",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q41",
+   "fieldtype": "Select",
+   "label": "O0110 - Special treatments, procedures, and programs",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q42",
+   "fieldtype": "Select",
+   "label": "M2200 - Therapy Need",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "q43",
+   "fieldtype": "Select",
+   "label": "Is review email (including any correspondence)copied into coordination note?",
+   "options": "Yes\nNo\nNA"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "medical_coder_flow.payor_type_hchb",
+   "fieldname": "payor_type_hchb",
+   "fieldtype": "Data",
+   "label": "Payor Type (As per HCHB)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medical_coder_flow.codername",
+   "fieldname": "coder_name",
+   "fieldtype": "Data",
+   "label": "Coder Name"
+  },
+  {
+   "fetch_from": "medical_coder_flow.team_lead",
+   "fieldname": "team_lead",
+   "fieldtype": "Data",
+   "label": "Team Lead"
+  },
+  {
+   "fetch_from": "medical_coder_flow.email",
+   "fieldname": "qa",
+   "fieldtype": "Data",
+   "label": "QA",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medical_coder_flow.assigned_by",
+   "fieldname": "qa_lead",
+   "fieldtype": "Data",
+   "label": "QA Lead",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medical_coder_flow.production_completed_date",
+   "fieldname": "production_completed_date",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Production Completed Date",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "medical_coder_flow.rebutal_status",
+   "fieldname": "rebutal_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Rebutal Status",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "chart_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Chart Status",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "coding_tab",
+   "fieldtype": "Tab Break",
+   "label": "Coding"
+  },
+  {
+   "fieldname": "oasis_tab",
+   "fieldtype": "Tab Break",
+   "label": "OASIS"
+  },
+  {
+   "fieldname": "coordination_note_tab",
+   "fieldtype": "Tab Break",
+   "label": "Coordination Note"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "pass_",
+   "fieldtype": "Data",
+   "label": "Pass",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-12 18:56:20.000421",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "QA Weightage",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

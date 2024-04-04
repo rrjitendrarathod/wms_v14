@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "MItems Multiple Values Table",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2023-08-17 12:48:40.152072",
+   "default_value": null,
+   "doc_type": "MItems Multiple Values Table",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "multiple_values",
+   "idx": 0,
+   "modified": "2023-08-17 12:48:40.152072",
+   "modified_by": "Administrator",
+   "name": "MItems Multiple Values Table-multiple_values-length",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "length",
+   "property_type": "Int",
+   "row_name": null,
+   "value": "900"
+  }
+ ],
+ "sync_on_migrate": 1
+}

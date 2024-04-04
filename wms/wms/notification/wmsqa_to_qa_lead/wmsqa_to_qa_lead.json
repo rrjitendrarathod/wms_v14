@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.workflow_state == \"Production Completed\"",
+ "creation": "2023-04-28 18:16:46.256079",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 0,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-11-06 11:08:02.073526",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "WmsQA to QA Lead",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_by",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{frappe.session.user}} assigned a new task {{doc.name}} to you ",
+ "value_changed": "workflow_state"
+}

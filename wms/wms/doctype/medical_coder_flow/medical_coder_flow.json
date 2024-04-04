@@ -1,0 +1,1796 @@
+{
+ "actions": [],
+ "autoname": "field:patient_reference_details",
+ "creation": "2022-06-01 10:25:25.356285",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_tab",
+  "chart_status",
+  "status",
+  "technical_issue",
+  "rebutal_status",
+  "column_break_2",
+  "hold_reason",
+  "import_file",
+  "hold_reason_history1",
+  "details_section",
+  "mr_number",
+  "patient_reference_details",
+  "arrived_date",
+  "age_of_chart",
+  "codername",
+  "team_lead",
+  "coder_assign_datetime",
+  "opm_email",
+  "qam_email",
+  "dh_email",
+  "column_break_8",
+  "patient_name",
+  "coder_name",
+  "payor_type",
+  "payor_type_hchb",
+  "assessment_type",
+  "priority",
+  "branch",
+  "qa_team_lead_section",
+  "audit_type",
+  "audit_date",
+  "employee",
+  "email",
+  "assign_to_name",
+  "qa_reassign_table",
+  "column_break_53",
+  "assigned_by",
+  "qa_lead_assign_table",
+  "qa_chart_status",
+  "testing_mid",
+  "coder_error_correction",
+  "coder_error_comments",
+  "qa_error_correction",
+  "qa_error_comments",
+  "do_you_accept_coder_error_section",
+  "accept_coder_error_by_dept_head",
+  "section_break_1",
+  "dept_head_comments",
+  "accept_qa_error_qam",
+  "accept_qa_error_by_qa_manager",
+  "section_break_2",
+  "qam_comments",
+  "accept_coder_error_om",
+  "accept_coder_by_operation_manager",
+  "section_break_3",
+  "op_manager_comments_two",
+  "accept_coder_error_two_om",
+  "accept_coder_error_by_operations_manager_two",
+  "section_break_4",
+  "op_manager_comments",
+  "accept_error_by_qal",
+  "accept_error_from_qa_lead",
+  "column_break_wrr7d",
+  "qa_tick",
+  "section_break_5",
+  "qa_error_comment",
+  "coder_accept_error",
+  "accept_error_two",
+  "column_break_m41ix",
+  "mc_tick_two",
+  "section_break_i7ebg",
+  "medical_coder_comments_two",
+  "section_break_6",
+  "error_based_on_feedback_received2",
+  "column_break_upi1e",
+  "mc_tick_3",
+  "section_break_btndo",
+  "medical_coder_comment3",
+  "section_break_gxdud",
+  "accept_coder_error_two",
+  "accept_coder_error_from_qa_lead",
+  "section_break_7",
+  "team_lead_comments_by_qal_feedback",
+  "accept_qa_error",
+  "accept_qa_error_by_qal",
+  "section_break_8",
+  "qal_comments",
+  "accept_coder_error_tl",
+  "accept_coder_error_from_coder",
+  "section_break_9",
+  "team_lead_comments",
+  "coder_accept_error_by_qa",
+  "coder_accept_error_from_qa",
+  "column_break_vjjnw",
+  "mc_tick",
+  "section_break_10",
+  "medical_coder_comments",
+  "work_allocation_tab",
+  "production_work_allocation_section",
+  "assessment_date",
+  "gender",
+  "pdpc",
+  "no_of_pages",
+  "pdx",
+  "column_break_64",
+  "pdpc_qa",
+  "no_of_pages_qa",
+  "pdx_qa",
+  "column_break_41",
+  "pdpc_qa_comments",
+  "no_of_pages_qa_comments",
+  "pdx_qa_comments",
+  "diagnosisprocedures_section",
+  "type",
+  "onsetexacerbation",
+  "symptom_control_rating",
+  "column_break_77",
+  "type_qa",
+  "onsetexacerbation_qa",
+  "symptom_control_rating_qa",
+  "column_break_48",
+  "type_qa_comments",
+  "onsetexacerbation_qa_comments",
+  "symptom_control_rating_qa_comments",
+  "section_break_85",
+  "icd_code",
+  "qa_feedback_column",
+  "icd_codeqa",
+  "sticky_notes_table_section",
+  "sticky_notes_table",
+  "column_break_kjaek",
+  "notepad",
+  "mitems_tab",
+  "section_break_54",
+  "error_marked",
+  "qa_weightage_button",
+  "oasis_answer_change",
+  "m_itmes_section",
+  "mitems",
+  "oasis_item",
+  "cko",
+  "mitem",
+  "column_break_100",
+  "cancer_treatments",
+  "rt_mitems",
+  "column_break_99",
+  "respiratory_therapies",
+  "none_mitems",
+  "column_break_103",
+  "other",
+  "ct_mitems",
+  "column_break_109",
+  "none_of_the_above",
+  "ot_mitems",
+  "qa_mitems_section",
+  "qa_mitems",
+  "qa_table",
+  "combined_mitems",
+  "check_for_o_series_mitems",
+  "qa_mitem",
+  "section_break_121",
+  "qact",
+  "qact_mitems",
+  "rs_qact_mitems",
+  "column_break_127",
+  "qart",
+  "qart_mitems",
+  "rs_qart_mitems",
+  "column_break_124",
+  "qaot",
+  "qaot_mitems",
+  "rs_qaot_mitems",
+  "column_break_130",
+  "qanone",
+  "qanone_mitems",
+  "rs_qanone_mitems",
+  "coding_post_problem_tab",
+  "column_break_30",
+  "coding_post_problem",
+  "clinician_name",
+  "coding_post_problem_section",
+  "todo",
+  "team_lead_email",
+  "question",
+  "question1",
+  "question2",
+  "column_break_39",
+  "coding_post_problem_amswer_comments",
+  "cppa",
+  "cppa1",
+  "super_qa",
+  "internal_super",
+  "internal_super_qa",
+  "isqa_comments",
+  "external_super_qa",
+  "super_qa_status",
+  "esqa_comments",
+  "section_break_20",
+  "assigment",
+  "section_break_106",
+  "production_completed_date",
+  "start_time",
+  "end_time",
+  "amended_from",
+  "qa",
+  "medical",
+  "manager_data",
+  "qa_manger",
+  "dept_head",
+  "production",
+  "qa_lead",
+  "clarification",
+  "work_allocation_activity_history",
+  "dept",
+  "deparment_head",
+  "final_chart_status_datetime",
+  "creation_date",
+  "mitem_payortype",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_medical_coder_flow"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "description": "<p style=\"color: red;\"><b> Please select any from the drop-down </b></p> ",
+   "fieldname": "pdpc",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "PDPC- Huddle Note or Care Coordination Note Present?",
+   "options": "\nYes\nNo",
+   "permlevel": 6,
+   "reqd": 1
+  },
+  {
+   "columns": 8,
+   "fieldname": "pdx",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M1021(PDX)",
+   "permlevel": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_of_pages",
+   "fieldtype": "Data",
+   "label": "No of Pages",
+   "permlevel": 6,
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "default": "Yet-to-start",
+   "fieldname": "chart_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chart Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diagnosisprocedures_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Diagnosis/Procedures",
+   "permlevel": 6,
+   "width": "50"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "icd_code",
+   "fieldtype": "Table",
+   "label": "ICD Code",
+   "options": "ICD",
+   "permlevel": 6,
+   "read_only": 1
+  },
+  {
+   "fieldname": "onsetexacerbation",
+   "fieldtype": "Select",
+   "label": "Onset/Exacerbation",
+   "options": "Exacerbation\nOnset",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "symptom_control_rating",
+   "fieldtype": "Select",
+   "label": "Symptom Control Rating",
+   "options": "--Select any one from the list--\n0\n1\n2\n3\n4",
+   "permlevel": 6
+  },
+  {
+   "default": "YES",
+   "fieldname": "oasis_answer_change",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "OASIS ANSWER CHANGE",
+   "options": "YES",
+   "permlevel": 6
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.oasis_answer_change == \"YES\"",
+   "fieldname": "m_itmes_section",
+   "fieldtype": "Section Break",
+   "label": "M ITEMS"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Medical Coder') || (doc.cko == \"0\")",
+   "fieldname": "mitems",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "MItems",
+   "options": "MItem Values",
+   "permlevel": 6
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.oasis_answer_change == \"YES\" || (doc.cko == \"0\")",
+   "fieldname": "oasis_item",
+   "fieldtype": "Table",
+   "label": "OASIS Item",
+   "options": "OASIS Child MItem"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "<p style=\"color: red;\"><b> Please select any from the drop-down </b></p> ",
+   "fieldname": "coding_post_problem",
+   "fieldtype": "Select",
+   "label": "CODING POST PROBLEM?",
+   "options": "\nYES\nNO",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.coding_post_problem == \"YES\"",
+   "fieldname": "coding_post_problem_section",
+   "fieldtype": "Section Break",
+   "label": "Coding Post Problem",
+   "permlevel": 6
+  },
+  {
+   "bold": 1,
+   "columns": 3,
+   "fetch_from": "patient_reference_details.mr_number",
+   "fieldname": "mr_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "MR Number",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_reference_details",
+   "fieldtype": "Link",
+   "label": "Patient Reference details",
+   "options": "Bulk Upload Activities",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "patient_reference_details.arrived_date",
+   "fieldname": "arrived_date",
+   "fieldtype": "Datetime",
+   "label": "Arrived Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "todo",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ToDO",
+   "options": "ToDo"
+  },
+  {
+   "fetch_from": "patient_reference_details.assigned_manager",
+   "fieldname": "team_lead",
+   "fieldtype": "Link",
+   "label": "Team Lead",
+   "options": "User",
+   "permlevel": 6,
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "patient_reference_details.patient_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "columns": 9,
+   "fetch_from": "patient_reference_details.assigned_to",
+   "fieldname": "coder_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Coder Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "patient_reference_details.sub_payor_type",
+   "fieldname": "payor_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Payor Type",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.coding_post_problem == \"YES\"",
+   "fieldname": "clinician_name",
+   "fieldtype": "Data",
+   "label": "Clinician Name",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.coding_post_problem == \"YES\" ",
+   "fieldname": "question",
+   "fieldtype": "Small Text",
+   "label": "Question",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hold_reason",
+   "fieldtype": "Link",
+   "label": "Hold Reason",
+   "options": "Hold Reason"
+  },
+  {
+   "fetch_from": "patient_reference_details.assessment_type",
+   "fieldname": "assigment",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Assigment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "qa_team_lead_section",
+   "fieldtype": "Section Break",
+   "label": "QA Team Lead",
+   "permlevel": 1
+  },
+  {
+   "default": "QA",
+   "fieldname": "audit_type",
+   "fieldtype": "Select",
+   "label": "Audit Type",
+   "options": "QA",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "Assign To",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Assigned QA",
+   "options": "Email",
+   "permlevel": 9,
+   "read_only": 1
+  },
+  {
+   "columns": 7,
+   "fetch_from": "patient_reference_details.assigned_to",
+   "fieldname": "codername",
+   "fieldtype": "Link",
+   "label": "Coder Name",
+   "options": "User",
+   "permlevel": 6,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Assigned QATL",
+   "permlevel": 1
+  },
+  {
+   "columns": 5,
+   "fetch_from": "patient_reference_details.assessment_type",
+   "fieldname": "assessment_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Assessment Type",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "error_marked",
+   "fieldtype": "Select",
+   "ignore_user_permissions": 1,
+   "label": "Any Coder Error?",
+   "mandatory_depends_on": "// eval:frappe.user.has_role('QA')",
+   "options": "\nYes\nNo",
+   "permlevel": 3
+  },
+  {
+   "fetch_from": "patient_reference_details.assigned_manager",
+   "fieldname": "team_lead_email",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Team Lead Email",
+   "options": "User",
+   "permlevel": 6,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:frappe.user.has_role('Department Head')",
+   "fieldname": "do_you_accept_coder_error_section",
+   "fieldtype": "Section Break",
+   "label": "DH:Coder error or QA Error?"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('QA Manager')",
+   "fieldname": "accept_qa_error_qam",
+   "fieldtype": "Section Break",
+   "label": "QAM: Do you accept QA Error?"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Operations Manager')",
+   "fieldname": "accept_coder_error_om",
+   "fieldtype": "Section Break",
+   "label": "OP: Do you accept the Coder Error?"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Production TL')",
+   "fieldname": "accept_coder_error_two",
+   "fieldtype": "Section Break",
+   "label": "TL: Based on QA TL feedback, Do you accept CoderError?",
+   "permlevel": 4
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('QA');\n",
+   "fieldname": "accept_error_by_qal",
+   "fieldtype": "Section Break",
+   "label": "QA: Do you accept the error based on QA TL Feedback?",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('QA Lead')",
+   "fieldname": "accept_qa_error",
+   "fieldtype": "Section Break",
+   "label": "QAL: Do you accept QA Error?",
+   "permlevel": 5
+  },
+  {
+   "depends_on": "eval:doc.accept_coder_error_from_coder==\"No\"",
+   "fieldname": "accept_qa_error_by_qal",
+   "fieldtype": "Select",
+   "label": "Do you accept QA Error?",
+   "mandatory_depends_on": "// eval:doc.accept_coder_error_from_coder==\"No\" && frappe.user.has_role('QA Lead')",
+   "options": "\nYes\nNo",
+   "permlevel": 5
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Operations Manager')",
+   "fieldname": "accept_coder_error_two_om",
+   "fieldtype": "Section Break",
+   "label": "OP: Do you accept the Coder Error?"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Medical Coder')",
+   "fieldname": "coder_accept_error",
+   "fieldtype": "Section Break",
+   "label": "MC: Do you accept the error based on feedback received?"
+  },
+  {
+   "default": "No",
+   "depends_on": "eval:doc.accept_coder_error_from_qa_lead==\"Yes\";",
+   "fieldname": "accept_error_two",
+   "fieldtype": "Select",
+   "label": "MC: Do you accept the error based on feedback received?",
+   "mandatory_depends_on": "// eval:(doc.accept_coder_error_from_qa_lead==\"Yes\" || doc.accept_coder_error_from_coder==\"Yes\") && frappe.user.has_role('Medical Coder')",
+   "options": "Yes\nNo",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Production TL')",
+   "fieldname": "accept_coder_error_tl",
+   "fieldtype": "Section Break",
+   "label": "TL: Do you accept Coder Error?"
+  },
+  {
+   "depends_on": "eval:doc.coder_accept_error_from_qa==\"No\"",
+   "fieldname": "accept_coder_error_from_coder",
+   "fieldtype": "Select",
+   "label": "TL: Do you accept Coder Error?",
+   "mandatory_depends_on": "// eval:doc.coder_accept_error_from_qa==\"No\" && frappe.user.has_role('Production TL')",
+   "options": "\nYes\nNo",
+   "permlevel": 4
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Medical Coder')",
+   "fieldname": "coder_accept_error_by_qa",
+   "fieldtype": "Section Break",
+   "label": "MC: Do you accept the error marked by QA?"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "No",
+   "depends_on": "eval:doc.error_marked == \"Yes\";",
+   "description": "<p style=\"color: red;\"><b> Changes made will be lost, if value is changed from 'Yes' to 'No'  </b></p>",
+   "fieldname": "coder_accept_error_from_qa",
+   "fieldtype": "Select",
+   "label": "MC: Do you accept the error marked by QA?",
+   "mandatory_depends_on": "// eval:doc.chart_status == \"Error Marked By QA\" && frappe.user.has_role('Medical Coder')",
+   "options": "Yes\nNo",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.accept_qa_error_by_qa_manager==\"No\"",
+   "fieldname": "dept_head_comments",
+   "fieldtype": "Small Text",
+   "label": "Department Head  comments",
+   "mandatory_depends_on": "// eval:doc.accept_coder_error_by_dept_head == \"Coder Error\" || doc.accept_coder_error_by_dept_head == \"QA Error\""
+  },
+  {
+   "depends_on": "eval:doc.accept_error_from_qa_lead==\"No\" || doc.accept_coder_error_by_operations_manager_two==\"No\" || doc.accept_coder_by_operation_manager==\"No\"",
+   "fieldname": "qam_comments",
+   "fieldtype": "Small Text",
+   "label": "QA Manager Comments",
+   "mandatory_depends_on": "// eval:doc.accept_qa_error_by_qa_manager == \"Yes\" || doc.accept_qa_error_by_qa_manager == \"No\""
+  },
+  {
+   "depends_on": "eval:doc.accept_error_two == \"No\"",
+   "fieldname": "op_manager_comments_two",
+   "fieldtype": "Small Text",
+   "label": "Operations Manager Comments",
+   "mandatory_depends_on": "// eval:doc.accept_coder_by_operation_manager == \"Yes\" || doc.accept_coder_by_operation_manager == \"No\""
+  },
+  {
+   "depends_on": "eval:doc.accept_coder_error_from_qa_lead==\"No\"",
+   "fieldname": "op_manager_comments",
+   "fieldtype": "Small Text",
+   "label": "Operations Manager Comments",
+   "mandatory_depends_on": "// eval:doc.accept_coder_error_by_operations_manager_two == \"Yes\" || doc.accept_coder_error_by_operations_manager_two == \"No\""
+  },
+  {
+   "depends_on": "eval:doc.accept_qa_error_by_qal==\"No\"",
+   "fieldname": "team_lead_comments_by_qal_feedback",
+   "fieldtype": "Small Text",
+   "label": "Team Lead Comments Based on QA Lead Feedback",
+   "mandatory_depends_on": "// eval:doc.accept_coder_error_from_qa_lead == \"Yes\" || doc.accept_coder_error_from_qa_lead == \"No\"",
+   "permlevel": 4
+  },
+  {
+   "depends_on": "eval:doc.accept_coder_error_from_coder==\"No\"",
+   "fieldname": "qal_comments",
+   "fieldtype": "Small Text",
+   "label": "QA Lead Comments",
+   "mandatory_depends_on": "// eval:doc.accept_qa_error_by_qal == \"Yes\" || doc.accept_qa_error_by_qal == \"No\"",
+   "permlevel": 5
+  },
+  {
+   "depends_on": "eval:doc.coder_accept_error_from_qa==\"No\"",
+   "fieldname": "team_lead_comments",
+   "fieldtype": "Small Text",
+   "label": "Team Lead Comments",
+   "mandatory_depends_on": "// eval: doc.accept_coder_error_from_coder == \"Yes\" || doc.accept_coder_error_from_coder == \"No\"",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "medical_coder_comments_two",
+   "fieldtype": "Small Text",
+   "label": "Medical Coder Comments",
+   "permlevel": 6
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "medical_coder_comments",
+   "fieldtype": "Small Text",
+   "label": "Medical Coder Comments",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.accept_coder_error_by_dept_head==\"QA Error\"|| doc.accept_qa_error_by_qa_manager==\"Yes\" ",
+   "fieldname": "qa_error_correction",
+   "fieldtype": "Section Break",
+   "label": "QA-Error Correction",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "coder_error_comments",
+   "fieldtype": "Small Text",
+   "label": "Coder Error Comments",
+   "mandatory_depends_on": "//eval:(doc.accept_coder_error_by_dept_head==\"Coder Error\"||doc.coder_accept_error_from_qa==\"Yes\"||doc.accept_error_two==\"Yes\"|| doc.accept_coder_error_by_operations_manager_two==\"Yes\" || doc.accept_coder_by_operation_manager == \"Yes\") && frappe.user.has_role('Medical Coder')",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "qa_error_comment",
+   "fieldtype": "Small Text",
+   "label": "QA Error Comments",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "qa_error_comments",
+   "fieldtype": "Small Text",
+   "label": "QA Error Comments",
+   "mandatory_depends_on": "// eval:(doc.accept_coder_error_by_dept_head==\"QA Error\"||doc.accept_error_from_qa_lead==\"Yes\"|| doc.accept_qa_error_by_qa_manager==\"Yes\" || doc.accept_error_from_qa_lead == \"Yes\") && frappe.user.has_role('QA')",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:doc.coding_post_problem == \"YES\";",
+   "fieldname": "coding_post_problem_amswer_comments",
+   "fieldtype": "Small Text",
+   "label": "Coding Post Problem Answer",
+   "mandatory_depends_on": "// eval:doc.coding_post_problem == \"YES\" && frappe.user.has_role(\"Production TL\")",
+   "permlevel": 4
+  },
+  {
+   "depends_on": "eval:doc.accept_qa_error_by_qa_manager==\"No\"",
+   "fieldname": "accept_coder_error_by_dept_head",
+   "fieldtype": "Select",
+   "label": "Coder Error or QA Error ?",
+   "mandatory_depends_on": "// eval:doc.accept_qa_error_by_qa_manager==\"No\" && frappe.user.has_role('Department Head')",
+   "options": "\nCoder Error\nQA Error"
+  },
+  {
+   "depends_on": "eval:doc.accept_error_from_qa_lead==\"No\" || doc.accept_coder_error_by_operations_manager_two==\"No\" || doc.accept_coder_by_operation_manager==\"No\"",
+   "fieldname": "accept_qa_error_by_qa_manager",
+   "fieldtype": "Select",
+   "label": "Do you accept QA Error?",
+   "mandatory_depends_on": "// eval:(doc.accept_error_from_qa_lead==\"No\" || doc.accept_coder_error_by_operations_manager_two==\"No\" || doc.accept_coder_by_operation_manager==\"No\") && frappe.user.has_role('QA Manager')",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.accept_error_two == \"No\";",
+   "fieldname": "accept_coder_by_operation_manager",
+   "fieldtype": "Select",
+   "label": "Do you accept the Coder Error?",
+   "mandatory_depends_on": "// eval:doc.accept_error_two == \"No\" && frappe.user.has_role('Operations Manager')",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.accept_coder_error_from_qa_lead==\"No\"",
+   "fieldname": "accept_coder_error_by_operations_manager_two",
+   "fieldtype": "Select",
+   "label": "Do you accept the Coder Error?",
+   "mandatory_depends_on": "// eval:doc.accept_coder_error_from_qa_lead==\"No\" && frappe.user.has_role('Operations Manager')",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.accept_qa_error_by_qal==\"No\"",
+   "fieldname": "accept_coder_error_from_qa_lead",
+   "fieldtype": "Select",
+   "label": "TL: Based on QA TL feedback, Do you accept CoderError?",
+   "mandatory_depends_on": "// eval:doc.accept_qa_error_by_qal==\"No\" && frappe.user.has_role('Production TL')",
+   "options": "\nYes\nNo",
+   "permlevel": 4
+  },
+  {
+   "default": "No",
+   "depends_on": "eval:doc.accept_qa_error_by_qal==\"Yes\";\n",
+   "fieldname": "accept_error_from_qa_lead",
+   "fieldtype": "Select",
+   "label": "QA: Do you accept the error based on QA TL Feedback?",
+   "mandatory_depends_on": "// eval:doc.accept_qa_error_by_qal==\"Yes\" && frappe.user.has_role('QA')",
+   "options": "Yes\nNo",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role(['L1 Supervisor','QA Manager','Department Head','Operations Manager','QA Lead'])",
+   "fieldname": "section_break_106",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "hidden": 1,
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "hidden": 1,
+   "label": "End Time"
+  },
+  {
+   "fieldname": "qa_mitems_section",
+   "fieldtype": "Section Break",
+   "label": "QA",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "qa_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "QA OASIS Item",
+   "options": "QA MItems",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "qa_weightage_button",
+   "fieldtype": "Button",
+   "label": "Create QA Weightage"
+  },
+  {
+   "fieldname": "sticky_notes_table_section",
+   "fieldtype": "Section Break",
+   "label": " M1023 (Other Secondary Diagnosis)",
+   "permlevel": 6
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sticky_notes_table",
+   "fieldtype": "Table",
+   "label": "Sticky Notes",
+   "options": "Secondary Diagnostics",
+   "permlevel": 6
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_54",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break",
+   "label": "QA Comments"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break",
+   "label": "QA Comments"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.accept_error_from_qa_lead == \"No\"||doc.accept_error_from_qa_lead==\"Yes\"",
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Medical Coder')",
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "MC: Do you accept the error based on feedback received?"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.coder_accept_error_from_qa == \"No\"||doc.coder_accept_error_from_qa==\"Yes\"",
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production_work_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Production Work Allocation"
+  },
+  {
+   "depends_on": "eval:doc.accept_coder_error_by_dept_head==\"Coder Error\"|| doc.accept_coder_error_by_operations_manager_two==\"Yes\" || doc.accept_coder_by_operation_manager == \"Yes\"",
+   "fieldname": "coder_error_correction",
+   "fieldtype": "Section Break",
+   "label": "Coder Error Correction",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "testing_mid",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "MID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Medical Coder Flow",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "qa_mitems",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "QA M Items",
+   "options": "MItem Values",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "manager_data",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Manager Data"
+  },
+  {
+   "fieldname": "qa_manger",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "QA Manger"
+  },
+  {
+   "fieldname": "dept_head",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Dept Head"
+  },
+  {
+   "fieldname": "production",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Production"
+  },
+  {
+   "fieldname": "qa_lead",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "QA Lead"
+  },
+  {
+   "fieldname": "qa",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "QA"
+  },
+  {
+   "fieldname": "medical",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Medical "
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clarification",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Clarification "
+  },
+  {
+   "fieldname": "work_allocation_activity_history",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Allocation Activity History"
+  },
+  {
+   "fieldname": "dept",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Dept "
+  },
+  {
+   "fieldname": "deparment_head",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Deparment Head"
+  },
+  {
+   "fieldname": "assign_to_name",
+   "fieldtype": "Data",
+   "label": "Assigned QA Name",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_reference_details.assign_to_datetime",
+   "fieldname": "coder_assign_datetime",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Coder Assign Datetime"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "patient_reference_details.payor_type",
+   "fieldname": "qa_chart_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Sub Payor Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "question1",
+   "fieldtype": "Small Text",
+   "label": "Question 2",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "question2",
+   "fieldtype": "Small Text",
+   "label": "Question 3",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "cppa",
+   "fieldtype": "Small Text",
+   "label": "Coding Post Problem Answer 2",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "cppa1",
+   "fieldtype": "Small Text",
+   "label": "Coding Post Problem Answer 3",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "qa_reassign_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "QA Reassign Table",
+   "options": "Medical Coder QA Reassign Datetime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qa_lead_assign_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "QA lead Assign Table",
+   "options": "Medical Coder QA Lead Reassign Datetime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_chart_status_datetime",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Final Chart Status datetime",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Creation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "combined_mitems",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Combined Mitems",
+   "options": "Combined Mitems"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "description": "<p style=\"color: red;\"><b> Please select any from the drop-down </b></p> ",
+   "fieldname": "pdpc_qa",
+   "fieldtype": "Select",
+   "label": "PDPC- Huddle Note or Care Coordination Note Present?(QA)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "pdx_qa",
+   "fieldtype": "Data",
+   "label": "M1021(PDX)(QA)"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "no_of_pages_qa",
+   "fieldtype": "Data",
+   "label": "No of Pages(QA)"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "type_qa",
+   "fieldtype": "Select",
+   "label": "Type(qa)",
+   "options": "--Select any one from the list--\nDiagnosis\nProcedure"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "onsetexacerbation_qa",
+   "fieldtype": "Select",
+   "label": "Onset/Exacerbation(QA)",
+   "options": "--Select any one from the list--\nOnset\nExacerbation"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "symptom_control_rating_qa",
+   "fieldtype": "Select",
+   "label": "Symptom Control Rating(QA)",
+   "options": "--Select any one from the list--\n0\n1\n2\n3\n4"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "pdpc_qa_comments",
+   "fieldtype": "Small Text",
+   "label": "PDPC- Huddle Note or Care Coordination Note Present?(QA Comments)",
+   "width": "50"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "pdx_qa_comments",
+   "fieldtype": "Small Text",
+   "label": "M1021(PDX)(QA Comments)",
+   "width": "50"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "no_of_pages_qa_comments",
+   "fieldtype": "Small Text",
+   "label": "No of Pages(QA Comments)"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "type_qa_comments",
+   "fieldtype": "Small Text",
+   "label": "Type(QA Comments)"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "onsetexacerbation_qa_comments",
+   "fieldtype": "Small Text",
+   "label": "Onset/Exacerbation(QA Comments)"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "symptom_control_rating_qa_comments",
+   "fieldtype": "Small Text",
+   "label": "Symptom Control Rating(QA Comments)"
+  },
+  {
+   "fieldname": "column_break_64",
+   "fieldtype": "Column Break",
+   "label": "QA Feedback"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_77",
+   "fieldtype": "Column Break",
+   "label": "QA Feedback"
+  },
+  {
+   "fieldname": "section_break_85",
+   "fieldtype": "Section Break",
+   "label": " M1023 (Other Secondary Diagnosis)"
+  },
+  {
+   "fieldname": "qa_feedback_column",
+   "fieldtype": "Column Break",
+   "label": "QA Feedback",
+   "width": "300px"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "icd_codeqa",
+   "fieldtype": "Table",
+   "label": "ICD CodeQA",
+   "options": "ICD Code QA"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.mitem != null && doc.none_of_the_above == \"0\"",
+   "fieldname": "cancer_treatments",
+   "fieldtype": "Check",
+   "label": "Cancer Treatments",
+   "permlevel": 6
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.mitem != null && doc.none_of_the_above == \"0\"",
+   "fieldname": "respiratory_therapies",
+   "fieldtype": "Check",
+   "label": "Respiratory Therapies",
+   "permlevel": 6
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.mitem != null && doc.none_of_the_above == \"0\"",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other",
+   "permlevel": 6
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.cancer_treatments == \"0\" && doc.other== \"0\" && doc.respiratory_therapies== \"0\" && doc.mitem != null",
+   "fieldname": "none_of_the_above",
+   "fieldtype": "Check",
+   "label": "None of the Above",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.respiratory_therapies == \"1\"",
+   "fieldname": "none_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.other == \"1\"",
+   "fieldname": "ct_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.cancer_treatments == \"1\"",
+   "fieldname": "rt_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.none_of_the_above == \"1\"",
+   "fieldname": "ot_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "column_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "O0110",
+   "depends_on": "eval:doc.cko==\"1\"",
+   "fieldname": "mitem",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "M Item",
+   "permlevel": 6,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cko",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Check for O series M Items",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.cko==\"1\" && doc.oasis_answer_change == \"YES\"",
+   "fieldname": "column_break_100",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "O: SPECIAL TREATMENTS, PROCEDURES, AND PROGRAMS",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "column_break_103",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_109",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_for_o_series_mitems",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Check for O series M Items",
+   "permlevel": 3
+  },
+  {
+   "default": "O0110",
+   "depends_on": "eval:doc.error_marked == \"Yes\" && doc.check_for_o_series_mitems ==\"1\"",
+   "fieldname": "qa_mitem",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "M Item",
+   "permlevel": 3,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"  && doc.check_for_o_series_mitems==\"1\";",
+   "fieldname": "section_break_121",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "O: SPECIAL TREATMENTS, PROCEDURES, AND PROGRAMS",
+   "permlevel": 3
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.qa_mitem != null && doc.qanone == \"0\";",
+   "fieldname": "qact",
+   "fieldtype": "Check",
+   "label": "Cancer Treatments",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:doc.qact == \"1\";",
+   "fieldname": "qact_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 3
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.qa_mitem != null && doc.qanone == \"0\";",
+   "fieldname": "qaot",
+   "fieldtype": "Check",
+   "label": "Other",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:doc.qaot == \"1\";",
+   "fieldname": "qaot_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 3
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.qa_mitem != null && doc.qanone == \"0\";",
+   "fieldname": "qart",
+   "fieldtype": "Check",
+   "label": "Respiratory Therapies",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:doc.qart == \"1\";",
+   "fieldname": "qart_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 3
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.qact == \"0\" && doc.qaot== \"0\" && doc.qart== \"0\" && doc.qa_mitem != null;",
+   "fieldname": "qanone",
+   "fieldtype": "Check",
+   "label": "None of the Above",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:doc.qanone == \"1\";",
+   "fieldname": "qanone_mitems",
+   "fieldtype": "Table MultiSelect",
+   "label": "M Items",
+   "options": "MItems Multiple Values Table",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "column_break_124",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.error_marked == \"Yes\"",
+   "fieldname": "column_break_127",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_130",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.qact == \"1\" && doc.qact_mitems != null;",
+   "fieldname": "rs_qact_mitems",
+   "fieldtype": "Small Text",
+   "label": "Reason for change",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval: doc.qaot == \"1\" && doc.qaot_mitems != null;",
+   "fieldname": "rs_qaot_mitems",
+   "fieldtype": "Small Text",
+   "label": "Reason for change",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval:doc.qart == \"1\" && doc.qart_mitems != null;",
+   "fieldname": "rs_qart_mitems",
+   "fieldtype": "Small Text",
+   "label": "Reason for change",
+   "permlevel": 3
+  },
+  {
+   "depends_on": "eval: doc.qanone == \"1\" && doc.qanone_mitems != null;",
+   "fieldname": "rs_qanone_mitems",
+   "fieldtype": "Small Text",
+   "label": "Reason for change",
+   "permlevel": 3
+  },
+  {
+   "columns": 4,
+   "fetch_from": "patient_reference_details.payor_type",
+   "fieldname": "payor_type_hchb",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Payor Type (As per HCHB)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_reference_details.mitem_payortype",
+   "fieldname": "mitem_payortype",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Payor Type ",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:in_list([\"Yes\", \"No\"], doc.coder_accept_error_from_qa) && doc.workflow_state == 'Error Marked By QA'",
+   "fieldname": "mc_tick",
+   "fieldtype": "Check",
+   "label": "Please confirm to save"
+  },
+  {
+   "fieldname": "column_break_vjjnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wrr7d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:in_list([\"Yes\", \"No\"], doc.accept_error_from_qa_lead) && doc.workflow_state == 'QA Error Accepted by QA TL'",
+   "fieldname": "qa_tick",
+   "fieldtype": "Check",
+   "label": "Please confirm to Save",
+   "permlevel": 3
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:in_list([\"Yes\", \"No\"], doc.accept_error_two) && doc.workflow_state == 'Coder Error Accepted  by L1 supervisor-Post QA TL Feedback'\n",
+   "fieldname": "mc_tick_two",
+   "fieldtype": "Check",
+   "label": "please confirm to save"
+  },
+  {
+   "fieldname": "column_break_m41ix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gxdud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "No",
+   "depends_on": "eval:doc.accept_coder_error_from_coder==\"Yes\";",
+   "fieldname": "error_based_on_feedback_received2",
+   "fieldtype": "Select",
+   "label": "MC: Do you accept the error based on feedback received?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_upi1e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:in_list([\"Yes\", \"No\"], doc.error_based_on_feedback_received2) && doc.workflow_state == \"Coder Error Accepted  by L1 supervisor - 1st Level Appeal\"",
+   "fieldname": "mc_tick_3",
+   "fieldtype": "Check",
+   "label": "please confirm to save",
+   "permlevel": 6
+  },
+  {
+   "depends_on": "eval:doc.accept_error_two == \"No\"||doc.accept_error_two==\"Yes\"",
+   "fieldname": "section_break_i7ebg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.error_based_on_feedback_received2 == \"Yes\" || doc.error_based_on_feedback_received2 == \"No\"",
+   "fieldname": "section_break_btndo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_coder_comment3",
+   "fieldtype": "Small Text",
+   "label": "Medical Coder Comments",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Diagnosis\nProcedure",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "production_completed_date",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Production Completed Date",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "No Error",
+   "fieldname": "rebutal_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Rebutal Status",
+   "options": "No Error\nCoder Error\nQA Error",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Audit Date",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "work_allocation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Coding"
+  },
+  {
+   "fieldname": "mitems_tab",
+   "fieldtype": "Tab Break",
+   "label": " OASIS"
+  },
+  {
+   "fieldname": "coding_post_problem_tab",
+   "fieldtype": "Tab Break",
+   "label": "Coding Post Problem "
+  },
+  {
+   "fieldname": "hold_reason_history1",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Hold Reason History",
+   "options": "Hold Reason History",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_reference_details.status",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "technical_issue",
+   "fieldtype": "Link",
+   "label": "Technical Issue",
+   "options": "Technical Issue"
+  },
+  {
+   "columns": 10,
+   "fetch_from": "patient_reference_details.age_of_chart",
+   "fieldname": "age_of_chart",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age of Chart",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kjaek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role(['Medical Coder','QA','Super Admin','WMS Manager'])",
+   "fieldname": "notepad",
+   "fieldtype": "Text Editor",
+   "label": "Notepad"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Medical Coder Flow"
+  },
+  {
+   "fieldname": "parent_medical_coder_flow",
+   "fieldtype": "Link",
+   "label": "Parent Medical Coder Flow",
+   "options": "Medical Coder Flow"
+  },
+  {
+   "fieldname": "import_file",
+   "fieldtype": "Attach",
+   "label": "Attach File"
+  },
+  {
+   "fieldname": "super_qa",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Super QA"
+  },
+  {
+   "fieldname": "internal_super_qa",
+   "fieldtype": "Column Break",
+   "label": "Internal Super-QA"
+  },
+  {
+   "fieldname": "external_super_qa",
+   "fieldtype": "Column Break",
+   "label": "External-Super-QA"
+  },
+  {
+   "fieldname": "super_qa_status",
+   "fieldtype": "Select",
+   "label": "Super QA Status",
+   "options": "Internal Error\nExternal Error\nEscalation"
+  },
+  {
+   "fieldname": "isqa_comments",
+   "fieldtype": "Small Text",
+   "label": "Super QA Comments"
+  },
+  {
+   "fieldname": "esqa_comments",
+   "fieldtype": "Small Text",
+   "label": "Super QA Comments"
+  },
+  {
+   "fieldname": "internal_super",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date",
+   "permlevel": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "permlevel": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "opm_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Operations Manager Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "qam_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "QA Manager Email",
+   "options": "Email"
+  },
+  {
+   "columns": 9,
+   "fetch_from": "patient_reference_details.priority",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "dh_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Department Head Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 10,
+ "modified": "2024-03-21 17:42:29.727252",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Medical Coder Flow",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_medical_coder_flow",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

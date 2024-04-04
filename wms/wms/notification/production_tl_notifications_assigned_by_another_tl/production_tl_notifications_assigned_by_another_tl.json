@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2022-12-20 15:38:53.929965",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Bulk Upload Activities",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "here you have a new task",
+ "modified": "2023-08-02 15:09:28.479029",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Production TL Notifications Assigned by another Tl",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ frappe.session.user }} - has assigned {{doc.mr_number}} to you",
+ "value_changed": "assigned_manager"
+}

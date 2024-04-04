@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.error_marked==\"Yes\"",
+ "creation": "2022-07-21 16:18:25.776797",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "QA Work Allocation",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "You got an error marked medical record from the team lead",
+ "modified": "2022-07-21 16:27:00.179335",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "coder error notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "coder_name"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.production_documents }} has been error marked"
+}

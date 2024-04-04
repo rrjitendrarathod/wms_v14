@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2022-11-15 23:35:57.525008",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Bulk Upload Activities",
+ "enabled": 0,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "here you have a new task",
+ "modified": "2022-11-18 10:45:40.541177",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Add or manage activity notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.mr_number }} - has been assigned to you"
+}

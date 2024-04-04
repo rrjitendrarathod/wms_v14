@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": " SCR.#####",
+ "creation": "2022-06-07 14:42:50.797305",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "symptom_control_rating_id",
+  "symptom_control_rating"
+ ],
+ "fields": [
+  {
+   "fieldname": "symptom_control_rating_id",
+   "fieldtype": "Select",
+   "label": "Symptom Control Rating ID",
+   "options": "SCR.#####"
+  },
+  {
+   "fieldname": "symptom_control_rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Symptom Control Rating",
+   "options": "1\n2\n3"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-07 10:25:21.149134",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Symptom Control Rating",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

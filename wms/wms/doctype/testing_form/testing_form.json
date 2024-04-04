@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2022-05-19 12:19:50.915873",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "address",
+  "phone",
+  "section_break_7",
+  "function",
+  "sub_function",
+  "section_break_6",
+  "m_item",
+  "picklist",
+  "questions",
+  "values",
+  "multiple_values",
+  "options",
+  "date_field",
+  "three_digits"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone "
+  },
+  {
+   "fieldname": "questions",
+   "fieldtype": "Data",
+   "label": "Questions"
+  },
+  {
+   "depends_on": "eval:doc.picklist ==\"Single Pick-List\" && doc.questions !== \"Date Assesment Completed\" && doc.questions !== 'Therapy Need' && doc.questions !== \"Date of Physician-ordered Start of Care (Resumption of Care)\" && doc.questions !== \"Date of Referral\" && doc.questions !== \"Inpatient Discharge Date (most recent)\" && doc.questions !== \"Inpatient Discharge Date (most recent) unknown\"",
+   "fieldname": "values",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Values"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.questions == \"Current Payment Sources for Home Care\" || doc.questions == \"Active Diagnoses \u2013 Comorbidities and Co-existing Conditions\" || doc.questions == \"Therapies the patient receives at home\" || doc.questions == \"Risk for Hospitalization\" && doc.questions !== \"Date Assesment Completed\" && doc.questions !== 'Therapy Need' && doc.questions !== \"Date of Physician-ordered Start of Care (Resumption of Care)\" && doc.questions !== \"Date of Referral\" && doc.questions !== \"Inpatient Discharge Date (most recent)\" && doc.questions !== \"Inpatient Discharge Date (most recent) unknown\"",
+   "fieldname": "multiple_values",
+   "fieldtype": "Table MultiSelect",
+   "label": "Multiple Values",
+   "options": "MItems Multiple Values Table"
+  },
+  {
+   "fieldname": "picklist",
+   "fieldtype": "Data",
+   "label": "PickList"
+  },
+  {
+   "fieldname": "m_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "M Item",
+   "options": "MItem Test",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.values == \"1-Able to feed self independently but requires.\" || doc.values == \"1-Able to take medication(s) at the correct times if\" || doc.values== \"2-Able to bathe in shower or tub with the intermittent assistance of another person:\"",
+   "fieldname": "options",
+   "fieldtype": "Select",
+   "label": "Options "
+  },
+  {
+   "depends_on": "eval:doc.questions == \"Date Assesment Completed\" || doc.questions == \"Date of Physician-ordered Start of Care (Resumption of Care)\" || doc.questions == \"Date of Referral\" || doc.questions == \"Inpatient Discharge Date (most recent)\" || doc.questions == \"Inpatient Discharge Date (most recent) unknown\" ",
+   "fieldname": "date_field",
+   "fieldtype": "Date",
+   "label": "Date Field"
+  },
+  {
+   "fieldname": "sub_function",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sub Function ",
+   "options": "\nSOC\nRecert\nROC\nSCIC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Function",
+   "options": "\nMedicare\nManaged Care\nCommercial",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.questions == 'Therapy Need'",
+   "fieldname": "three_digits",
+   "fieldtype": "Data",
+   "label": "3 Digits"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-11 09:29:32.505860",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Testing Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

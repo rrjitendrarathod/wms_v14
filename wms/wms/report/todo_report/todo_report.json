@@ -1,0 +1,22 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-01-08 11:42:50.794806",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-12-19 11:14:12.231700",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "ToDo Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "ToDo",
+ "report_name": "ToDo Report",
+ "report_type": "Script Report",
+ "roles": []
+}

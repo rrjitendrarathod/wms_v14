@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-13 13:48:25.382930",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_values"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_values",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Values",
+   "length": 800
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-27 12:29:59.109531",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "MItems Values Tables",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state==\"No Error\" or doc.workflow_state==\"Error Corrected by QA\" or doc.workflow_state==\"QA Error Rejected  by QA TL\"",
+ "creation": "2022-10-01 09:21:50.500482",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "here you have a notification",
+ "modified": "2022-11-18 10:45:10.449960",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Team Lead-QA notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "team_lead_email"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.mr_number }} - {{doc.workflow_state}}",
+ "value_changed": "workflow_state"
+}

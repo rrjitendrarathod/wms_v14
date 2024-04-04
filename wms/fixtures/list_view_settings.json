@@ -1,0 +1,13 @@
+[
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"fieldname\":\"name\",\"label\":\"ID\"},{\"fieldname\":\"status_field\",\"label\":\"Status\"},{\"fieldname\":\"chart_status\",\"label\":\"Chart Status\"},{\"fieldname\":\"mr_number\",\"label\":\"MR Number\"},{\"fieldname\":\"patient_name\",\"label\":\"Patient Name\"},{\"fieldname\":\"coder_name\",\"label\":\"Coder Name\"},{\"fieldname\":\"payor_type_hchb\",\"label\":\"Payor Type (As per HCHB)\"},{\"fieldname\":\"assessment_type\",\"label\":\"Assessment Type\"},{\"fieldname\":\"pdx\",\"label\":\"M1021(PDX)\"},{\"fieldname\":\"priority\",\"label\":\"Priority\"},{\"fieldname\":\"age_of_chart\",\"label\":\"Age of Chart\"}]",
+  "modified": "2024-03-20 13:56:57.632545",
+  "name": "Medical Coder Flow",
+  "total_fields": "13"
+ }
+]

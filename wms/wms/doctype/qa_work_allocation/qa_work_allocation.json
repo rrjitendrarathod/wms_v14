@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-30 11:35:01.356623",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "medical_coder_flow",
+  "mr_number",
+  "audit_type",
+  "arrived_date",
+  "employee",
+  "contact_email",
+  "coder_name",
+  "branch",
+  "assigned_by",
+  "column_break_9",
+  "patient_name",
+  "payor_type",
+  "assessment_type",
+  "amended_from",
+  "qa_status",
+  "comments",
+  "error_marked"
+ ],
+ "fields": [
+  {
+   "fieldname": "mr_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MR Number",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "audit_type",
+   "fieldtype": "Select",
+   "label": "Audit Type",
+   "options": "QA"
+  },
+  {
+   "fieldname": "arrived_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Arrived Date"
+  },
+  {
+   "fieldname": "coder_name",
+   "fieldtype": "Data",
+   "label": "Coder Name"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "payor_type",
+   "fieldtype": "Data",
+   "label": "Payor Type"
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Type"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "QWA.####"
+  },
+  {
+   "fieldname": "medical_coder_flow",
+   "fieldtype": "Link",
+   "label": "Medical Coder Flow",
+   "options": "Medical Coder Flow"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QA Work Allocation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "qa_status",
+   "fieldtype": "Select",
+   "label": "QA Status",
+   "options": "--Select any one from the list--\nPending Quality\nQA Completed\n1st Level Appeal\n2nd Level Appeal\nCoder-Error-Correction\nQA-Error-Correction",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Assign To",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.company_email",
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "error_marked",
+   "fieldtype": "Select",
+   "label": "Error Marked",
+   "options": "--Select any one from the list--\nYes\nNo",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Data",
+   "label": "Assigned By",
+   "options": "Email",
+   "permlevel": 2
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-18 10:38:14.877782",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "QA Work Allocation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

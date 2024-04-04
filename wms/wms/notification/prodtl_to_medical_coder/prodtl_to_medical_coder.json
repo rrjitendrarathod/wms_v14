@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2023-08-14 14:38:34.536326",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Bulk Upload Activities",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2024-03-19 15:35:11.854992",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Prodtl to Medical Coder",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "assigned_to"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ frappe.session.user }} - has assigned a new task  {{doc.mr_number}} to you",
+ "value_changed": "assigned_to"
+}

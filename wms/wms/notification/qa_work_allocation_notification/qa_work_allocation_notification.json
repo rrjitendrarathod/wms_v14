@@ -1,0 +1,34 @@
+{
+ "attach_print": 1,
+ "channel": "System Notification",
+ "condition": "doc.qa_name==\"ram@redroad.co\"",
+ "creation": "2022-07-14 13:28:19.765101",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "QA Work Allocation",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "helo world",
+ "modified": "2022-07-14 14:14:33.913635",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "QA Work Allocation Notification",
+ "owner": "Administrator",
+ "property_value": "123",
+ "recipients": [
+  {
+   "condition": "doc.qa_name==\"ram@redroad.co\"",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "QA"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "set_property_after_alert": "branch",
+ "subject": "{{ doc.name }}"
+}

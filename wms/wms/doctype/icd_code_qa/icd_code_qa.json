@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-16 17:24:00.543877",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "icd_qa",
+  "remove_icd",
+  "qa_comments",
+  "is_diagnostics"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "icd_qa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ICD QA",
+   "length": 1000
+  },
+  {
+   "columns": 6,
+   "fieldname": "qa_comments",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "QA Comments",
+   "length": 1000
+  },
+  {
+   "columns": 2,
+   "fieldname": "remove_icd",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Remove ICD",
+   "options": "\nDelete"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_diagnostics",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "is_diagnostics"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-21 11:45:37.180365",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "ICD Code QA",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

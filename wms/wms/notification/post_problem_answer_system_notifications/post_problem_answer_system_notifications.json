@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.workflow_state==\"Send to Medical Coder - Answer 1\"  or doc.workflow_state==\"Send to Medical Coder - Answer 2\" or doc.workflow_state==\"Send to Medical Coder - Answer 3\" ",
+ "creation": "2022-11-18 09:24:29.524271",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-04-06 18:12:05.676806",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Post Problem Answer System Notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "coder_name"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.mr_number }} - Coding post problem clarification answered",
+ "value_changed": "workflow_state"
+}

@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.workflow_state==\"Error Corrected by Coder\" or doc.workflow_state==\"Coder 1st Level Appeal\" or doc.workflow_state==\"Production Completed\" or doc.workflow_state == \"1st Level Appeal - Error Accepted by Coder\"",
+ "creation": "2022-11-18 09:19:16.938555",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-03 10:20:30.666251",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "L1 Supervisor Notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "team_lead_email"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.mr_number }} - {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

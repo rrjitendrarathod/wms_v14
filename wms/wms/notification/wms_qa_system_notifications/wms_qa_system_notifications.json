@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.workflow_state==\"Production Completed\"",
+ "creation": "2022-11-18 09:26:54.276572",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-05 14:09:51.340798",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "WMS QA System Notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "QA Inventory Allocation"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.name }} - {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

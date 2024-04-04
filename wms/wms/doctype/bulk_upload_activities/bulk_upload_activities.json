@@ -1,0 +1,247 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_import": 1,
+ "autoname": "YYYY.MM.-.#####",
+ "creation": "2022-05-02 15:18:57.244467",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mr_number",
+  "patient_name",
+  "arrived_date",
+  "age_of_chart",
+  "status",
+  "activity_status",
+  "creation1",
+  "section_break_4",
+  "payor_type",
+  "sub_payor_type",
+  "mitem_payortype",
+  "assessment_type",
+  "uploaded_date_time",
+  "assigned_to",
+  "assign_to_datetime",
+  "assigned_manager",
+  "priority",
+  "creation_date",
+  "work_allocation_activity_history",
+  "section_break_15",
+  "medical_coder_reassign_table",
+  "production_tl_reassign_table",
+  "today"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mr_number",
+   "fieldtype": "Data",
+   "label": "MR Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "arrived_date",
+   "fieldtype": "Datetime",
+   "label": "Arrived Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assessment Type",
+   "options": "Assessment Type",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "uploaded_date_time",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Uploaded Date_Time"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Assigned Coder",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payor_type",
+   "fieldtype": "Link",
+   "label": "Payor Type (as per HCHB)",
+   "options": "HCHB Payor Type",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "payor_type.payor_type",
+   "fieldname": "sub_payor_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Payor Type ",
+   "options": "Payor Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_manager",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Assign To Production TL",
+   "options": "User",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "creation1",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Creation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assign_to_datetime",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Assign To Datetime"
+  },
+  {
+   "default": "Today",
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Assigned Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_allocation_activity_history",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Allocation Activity History",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_coder_reassign_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Medical Coder Reassign Table",
+   "options": "Medical Coder Reassign Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "payor_type.mitem_payor_type",
+   "fieldname": "mitem_payortype",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Mitem Payor Type",
+   "options": "MItem Payor Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "production_tl_reassign_table",
+   "fieldtype": "Table",
+   "label": "Production Tl Reassign Table",
+   "options": "Production Tl Reassign Table"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "description": "In hours",
+   "fieldname": "age_of_chart",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age of Chart",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "today",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Today",
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "activity_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Activity Status",
+   "options": "Open\nPicked\nIn Progress\nClosed"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "hidden": 1,
+   "link_doctype": "Medical Coder Flow",
+   "link_fieldname": "patient_reference_details"
+  }
+ ],
+ "modified": "2024-03-15 14:28:56.421825",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Bulk Upload Activities",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Red",
+   "title": "Inactive"
+  }
+ ],
+ "title_field": "mr_number",
+ "track_changes": 1
+}

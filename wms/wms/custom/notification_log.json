@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Notification Log",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2023-10-16 22:05:28.439288",
+   "default_value": null,
+   "doc_type": "Notification Log",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "email_content",
+   "idx": 0,
+   "modified": "2023-10-16 22:05:28.439288",
+   "modified_by": "Administrator",
+   "name": "Notification Log-email_content-hidden",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "hidden",
+   "property_type": "Check",
+   "row_name": null,
+   "value": "1"
+  }
+ ],
+ "sync_on_migrate": 1
+}

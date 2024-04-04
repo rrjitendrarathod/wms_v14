@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 18:47:02.825398",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mitem",
+  "redroad_coder_response",
+  "payor_type",
+  "assessment_type",
+  "exclude",
+  "include",
+  "special_include",
+  "dependent"
+ ],
+ "fields": [
+  {
+   "fieldname": "mitem",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MItem",
+   "options": "MItem Values",
+   "read_only": 1
+  },
+  {
+   "fieldname": "exclude",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exclude",
+   "read_only": 1
+  },
+  {
+   "fieldname": "include",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Include",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dependent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dependent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "redroad_coder_response",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Redroad Coder Response",
+   "length": 140,
+   "read_only": 1
+  },
+  {
+   "fieldname": "payor_type",
+   "fieldtype": "Data",
+   "label": "payor_type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Data",
+   "label": "Assessment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "special_include",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Special Include"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-09 14:24:20.895125",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "MItems Configuration Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

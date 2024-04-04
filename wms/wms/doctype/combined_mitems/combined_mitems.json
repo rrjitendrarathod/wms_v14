@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-06 11:28:43.337406",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "oasis_items",
+  "questions",
+  "clinical",
+  "redroad_response",
+  "reason_for_change",
+  "red_road_qa_response",
+  "qa_rationale"
+ ],
+ "fields": [
+  {
+   "fieldname": "oasis_items",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OASIS Items"
+  },
+  {
+   "fieldname": "questions",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Questions"
+  },
+  {
+   "fieldname": "clinical",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Clinician Response"
+  },
+  {
+   "fieldname": "redroad_response",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Redroad Coder Response"
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason for change"
+  },
+  {
+   "fieldname": "red_road_qa_response",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Redroad QA Response"
+  },
+  {
+   "fieldname": "qa_rationale",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": " QA Rationale"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-22 11:52:17.924245",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Combined Mitems",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

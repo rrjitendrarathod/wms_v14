@@ -1,0 +1,3 @@
+wms.patches.update_mitem_multiple_value
+wms.patches.disable_energy_points
+wms.patches.disable_energy_points_email_notifications

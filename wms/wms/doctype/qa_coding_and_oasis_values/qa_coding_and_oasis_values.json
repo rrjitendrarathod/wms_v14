@@ -1,0 +1,359 @@
+{
+ "actions": [],
+ "autoname": "QACO-.####",
+ "creation": "2023-11-02 18:07:35.721664",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coding_tab",
+  "assessment_type",
+  "column_break_kpysi",
+  "payor_type",
+  "coding_section",
+  "primary_diagnosis",
+  "coding_guidelines",
+  "appropriate_comorbidity",
+  "column_break_vliob",
+  "symptom_codes",
+  "coding_convention",
+  "total_coding_score",
+  "oasis_tab",
+  "m0069_gender",
+  "m0104_date_of_referral",
+  "n0415_high_risk_drug",
+  "surgical",
+  "m1610",
+  "m1700",
+  "m1740",
+  "m1810__upper_body_dressing",
+  "m1840_toilet_transferring",
+  "m1860_ambulation",
+  "gg0170__mobility",
+  "o0110_special_treatments",
+  "total_oasis_score",
+  "column_break_qgftt",
+  "m1005_inpatient_discharge_date",
+  "m0150_current_payment",
+  "pressure",
+  "m1400_when_is_the_patient",
+  "m1620",
+  "m1710",
+  "m1745",
+  "m1820_lower_body_dressing",
+  "m1845_toileting_hygiene",
+  "m1870_feeding_or_eating",
+  "m2020_management_of_oral_medications",
+  "m2200_therapy_need",
+  "column_break_zfogd",
+  "m0102_date_of_physician_ordered",
+  "m1033",
+  "k0520_nutritional_approaches",
+  "stasis",
+  "m1600",
+  "m1630",
+  "m1720",
+  "m1800__grooming",
+  "m1830_bathing",
+  "m1850__transfers",
+  "gg0130__self_care",
+  "m2030_management_of_injectable",
+  "coordination_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Assessment Type",
+   "options": "Assessment Type"
+  },
+  {
+   "fieldname": "column_break_kpysi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payor_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Payor Type",
+   "options": "Payor Type"
+  },
+  {
+   "fieldname": "coding_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "primary_diagnosis",
+   "fieldtype": "Float",
+   "label": "Is the primary diagnosis the focus of care?"
+  },
+  {
+   "fieldname": "coding_guidelines",
+   "fieldtype": "Float",
+   "label": "Does the coding on the 485 follow coding guidelines?"
+  },
+  {
+   "fieldname": "appropriate_comorbidity",
+   "fieldtype": "Float",
+   "label": "Have the appropriate co-morbidity diagnosis been coded? (Only ROC and Medicare more than No-10 can be wrong)"
+  },
+  {
+   "fieldname": "column_break_vliob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coding_convention",
+   "fieldtype": "Float",
+   "label": "Does the coding on the 485 follow coding convention?"
+  },
+  {
+   "fieldname": "symptom_codes",
+   "fieldtype": "Float",
+   "label": "Are symptom codes or questionable encounter diagnosis appropriate?"
+  },
+  {
+   "fieldname": "coding_tab",
+   "fieldtype": "Tab Break",
+   "label": "Coding"
+  },
+  {
+   "fieldname": "oasis_tab",
+   "fieldtype": "Tab Break",
+   "label": "OASIS"
+  },
+  {
+   "fieldname": "m0069_gender",
+   "fieldtype": "Data",
+   "label": "M0069 Gender"
+  },
+  {
+   "fieldname": "column_break_qgftt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "m1005_inpatient_discharge_date",
+   "fieldtype": "Data",
+   "label": "M1005- Inpatient discharge date"
+  },
+  {
+   "fieldname": "column_break_zfogd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "m0102_date_of_physician_ordered",
+   "fieldtype": "Data",
+   "label": "M0102 - Date of Physician Ordered SOC (ROC)"
+  },
+  {
+   "fieldname": "m0104_date_of_referral",
+   "fieldtype": "Data",
+   "label": "M0104 - Date of Referral"
+  },
+  {
+   "fieldname": "m0150_current_payment",
+   "fieldtype": "Data",
+   "label": "M0150 Current Payment Sources for Home Care"
+  },
+  {
+   "fieldname": "m1033",
+   "fieldtype": "Data",
+   "label": "M1033"
+  },
+  {
+   "fieldname": "n0415_high_risk_drug",
+   "fieldtype": "Data",
+   "label": "N0415: High -Risk Drug Classes: Use and Indication"
+  },
+  {
+   "fieldname": "pressure",
+   "fieldtype": "Data",
+   "label": "Pressure  (M1306, M1311, M1322, M1324)"
+  },
+  {
+   "fieldname": "stasis",
+   "fieldtype": "Data",
+   "label": "Stasis  (M1330, M1332, M1334)"
+  },
+  {
+   "fieldname": "surgical",
+   "fieldtype": "Data",
+   "label": "Surgical  (M1340, M1342)"
+  },
+  {
+   "fieldname": "m1400_when_is_the_patient",
+   "fieldtype": "Data",
+   "label": "M1400 - When is the patient dyspneic or noticeably short of breath?"
+  },
+  {
+   "fieldname": "m1600",
+   "fieldtype": "Data",
+   "label": "M1600"
+  },
+  {
+   "fieldname": "m1610",
+   "fieldtype": "Data",
+   "label": "M1610"
+  },
+  {
+   "fieldname": "m1700",
+   "fieldtype": "Data",
+   "label": "M1700"
+  },
+  {
+   "fieldname": "m1740",
+   "fieldtype": "Data",
+   "label": "M1740"
+  },
+  {
+   "fieldname": "m1620",
+   "fieldtype": "Data",
+   "label": "M1620"
+  },
+  {
+   "fieldname": "m1710",
+   "fieldtype": "Data",
+   "label": "M1710"
+  },
+  {
+   "fieldname": "m1745",
+   "fieldtype": "Data",
+   "label": "M1745"
+  },
+  {
+   "fieldname": "m1630",
+   "fieldtype": "Data",
+   "label": "M1630"
+  },
+  {
+   "fieldname": "m1720",
+   "fieldtype": "Data",
+   "label": "M1720"
+  },
+  {
+   "fieldname": "m1800__grooming",
+   "fieldtype": "Data",
+   "label": "M1800  Grooming"
+  },
+  {
+   "fieldname": "m1810__upper_body_dressing",
+   "fieldtype": "Data",
+   "label": "M1810  Upper Body Dressing"
+  },
+  {
+   "fieldname": "m1840_toilet_transferring",
+   "fieldtype": "Data",
+   "label": "M1840-Toilet Transferring"
+  },
+  {
+   "fieldname": "m1820_lower_body_dressing",
+   "fieldtype": "Data",
+   "label": "M1820 Lower Body Dressing"
+  },
+  {
+   "fieldname": "m1845_toileting_hygiene",
+   "fieldtype": "Data",
+   "label": "M1845-Toileting Hygiene"
+  },
+  {
+   "fieldname": "m1830_bathing",
+   "fieldtype": "Data",
+   "label": "M1830 Bathing"
+  },
+  {
+   "fieldname": "m1850__transfers",
+   "fieldtype": "Data",
+   "label": "M1850  Transfers"
+  },
+  {
+   "fieldname": "m1860_ambulation",
+   "fieldtype": "Data",
+   "label": "M1860 Ambulation / Locomotion"
+  },
+  {
+   "fieldname": "m1870_feeding_or_eating",
+   "fieldtype": "Data",
+   "label": "M1870 Feeding or Eating"
+  },
+  {
+   "fieldname": "gg0130__self_care",
+   "fieldtype": "Data",
+   "label": "GG0130  Self care"
+  },
+  {
+   "fieldname": "gg0170__mobility",
+   "fieldtype": "Data",
+   "label": "GG0170  Mobility"
+  },
+  {
+   "fieldname": "m2020_management_of_oral_medications",
+   "fieldtype": "Data",
+   "label": "M2020 Management of Oral Medications"
+  },
+  {
+   "fieldname": "m2030_management_of_injectable",
+   "fieldtype": "Data",
+   "label": "M2030 Management of injectable medications"
+  },
+  {
+   "fieldname": "o0110_special_treatments",
+   "fieldtype": "Data",
+   "label": "O0110 -  Special treatments, procedures, and programs"
+  },
+  {
+   "fieldname": "m2200_therapy_need",
+   "fieldtype": "Data",
+   "label": "M2200 -  Therapy Need"
+  },
+  {
+   "fieldname": "coordination_note",
+   "fieldtype": "Data",
+   "label": "Is review email  (including any correspondence) copied into coordination note?"
+  },
+  {
+   "fieldname": "k0520_nutritional_approaches",
+   "fieldtype": "Data",
+   "label": "K0520 Nutritional Approaches"
+  },
+  {
+   "fieldname": "total_coding_score",
+   "fieldtype": "Float",
+   "label": "Total Coding Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_oasis_score",
+   "fieldtype": "Float",
+   "label": "Total OASIS Score",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-09 16:24:11.518585",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "QA Coding and OASIS Values",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

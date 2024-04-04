@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-07-26 15:43:00.552987",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "naming_oasis",
+  "picklist",
+  "oasis_items",
+  "questions",
+  "clinical",
+  "redroad_response",
+  "reason_for_change",
+  "qa_clinician_response",
+  "qa_resason_for_change"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "oasis_items",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "OASIS Items",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "oasis_items.questions",
+   "fieldname": "questions",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Questions",
+   "length": 500,
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "clinical",
+   "fieldtype": "Text",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "label": "Clinician Response",
+   "length": 1000,
+   "permlevel": 6
+  },
+  {
+   "columns": 1,
+   "fieldname": "redroad_response",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Redroad Coder Response",
+   "length": 1000,
+   "permlevel": 6
+  },
+  {
+   "columns": 2,
+   "fieldname": "reason_for_change",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Reason for change",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": "QCM.#####"
+  },
+  {
+   "fieldname": "naming_oasis",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming "
+  },
+  {
+   "fieldname": "picklist",
+   "fieldtype": "Data",
+   "label": "PickList",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "qa_clinician_response",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Redroad QA Response",
+   "length": 1000,
+   "permlevel": 3
+  },
+  {
+   "columns": 2,
+   "fieldname": "qa_resason_for_change",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "QA Rationale",
+   "permlevel": 3
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-12 16:44:05.375168",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "OASIS Child MItem",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

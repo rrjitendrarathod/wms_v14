@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:mitems",
+ "creation": "2022-05-12 12:58:49.672092",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "function",
+  "sub_function",
+  "mitems",
+  "section_break_4",
+  "questions",
+  "pick_list",
+  "values",
+  "multiple_values",
+  "clinical_response",
+  "options",
+  "date_field",
+  "3_digits"
+ ],
+ "fields": [
+  {
+   "fieldname": "mitems",
+   "fieldtype": "Data",
+   "label": "MItems",
+   "unique": 1
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Select",
+   "label": "Function",
+   "options": "\nMedicare\nManaged Care\nCommercial"
+  },
+  {
+   "fieldname": "sub_function",
+   "fieldtype": "Select",
+   "label": "Sub Function",
+   "options": "\nSOC\nRecert\nROC"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "questions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Questions"
+  },
+  {
+   "fieldname": "pick_list",
+   "fieldtype": "Select",
+   "label": "Pick List",
+   "options": "\nSingle Pick-List\nMultiple Pick-List"
+  },
+  {
+   "depends_on": "eval:doc.pick_list == \"Multiple Pick-List\"",
+   "fieldname": "multiple_values",
+   "fieldtype": "Table MultiSelect",
+   "label": "Multiple Values",
+   "options": "MItems Multiple Values Table"
+  },
+  {
+   "depends_on": "eval:doc.pick_list == \"Single Pick-List\" && doc.questions !== 'Date Assesment Completed' && doc.questions != \"Therapy Need\"",
+   "fetch_from": "mitem_values.values",
+   "fieldname": "clinical_response",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Clinical Response"
+  },
+  {
+   "depends_on": "eval:doc.picklist ==\"Single Pick-List\" && doc.questions !== \"Date Assesment Completed\" && doc.questions !== 'Therapy Need' && doc.questions !== \"Date of Physician-ordered Start of Care (Resumption of Care)\" && doc.questions !== \"Date of Referral\" && doc.questions !== \"Inpatient Discharge Date (most recent)\" && doc.questions !== \"Inpatient Discharge Date (most recent) unknown\"",
+   "fetch_from": "values",
+   "fieldname": "values",
+   "fieldtype": "Link",
+   "label": "Values",
+   "options": "MItem Values"
+  },
+  {
+   "depends_on": "eval:doc.clinical_response == \"1-Able to feed self independently but requires.\" || doc.clinical_response == \"1-Able to take medication(s) at the correct times if\" || doc.clinical_response== \"2-Able to bathe in shower or tub with the intermittent assistance of another person:\"",
+   "fieldname": "options",
+   "fieldtype": "Select",
+   "label": "Options Values"
+  },
+  {
+   "depends_on": "eval:doc.mitems == \"M0090\"",
+   "fieldname": "date_field",
+   "fieldtype": "Date",
+   "label": "Date Field"
+  },
+  {
+   "depends_on": "eval:doc.questions == 'Therapy Need'",
+   "fieldname": "3_digits",
+   "fieldtype": "Data",
+   "label": "3 Digits"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-08 13:35:46.237716",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "MItem Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

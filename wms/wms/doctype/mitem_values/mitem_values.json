@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-05-13 13:48:50.094113",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "mitems",
+  "payortype",
+  "assessment_type",
+  "naming",
+  "questions",
+  "picklist",
+  "sub_values",
+  "multiple"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:!in_list([\"DatePicker\"], doc.picklist)\n",
+   "fieldname": "sub_values",
+   "fieldtype": "Table",
+   "label": "Sub Values",
+   "options": "MItems Values Tables"
+  },
+  {
+   "fieldname": "questions",
+   "fieldtype": "Data",
+   "label": "Questions",
+   "length": 500
+  },
+  {
+   "fieldname": "picklist",
+   "fieldtype": "Select",
+   "label": "PickList",
+   "options": "\nSinglePicklist\nMultiple Pick-List\nDatePicker"
+  },
+  {
+   "bold": 1,
+   "fieldname": "mitems",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Mitems"
+  },
+  {
+   "fieldname": "naming",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Link",
+   "label": " Assessment Type",
+   "options": "Assessment Type"
+  },
+  {
+   "fieldname": "payortype",
+   "fieldtype": "Link",
+   "label": "Payor Type",
+   "options": "Payor Type"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "ID.#####"
+  },
+  {
+   "fieldname": "multiple",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Multiple",
+   "options": "MItems Multiple Values Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 12:47:00.123334",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "MItem Values",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operations Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Department Head",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "mitems",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MC-{####}",
+ "creation": "2024-01-25 18:56:03.181874",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mitems",
+  "mitem_name",
+  "redroad_coder_response",
+  "payor_type",
+  "assessment_type",
+  "column_break_mskn1",
+  "picklist",
+  "exclude",
+  "include",
+  "special_include",
+  "dependent"
+ ],
+ "fields": [
+  {
+   "fieldname": "mitems",
+   "fieldtype": "Link",
+   "label": "MItems",
+   "options": "MItem Values",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.mitems",
+   "fieldname": "redroad_coder_response",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "RedRoad Coder Response",
+   "length": 500
+  },
+  {
+   "fetch_from": "mitems.mitems",
+   "fieldname": "mitem_name",
+   "fieldtype": "Data",
+   "label": "MItem Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.picklist == \"SinglePicklist\" && !(doc.__islocal)",
+   "fieldname": "exclude",
+   "fieldtype": "Table MultiSelect",
+   "label": "Exclude",
+   "options": "MItems Configuration Table"
+  },
+  {
+   "depends_on": "eval:doc.picklist == \"SinglePicklist\" && !(doc.__islocal)",
+   "fieldname": "include",
+   "fieldtype": "Table MultiSelect",
+   "label": "Include",
+   "options": "MItems Configuration Table"
+  },
+  {
+   "depends_on": "eval:doc.picklist == \"SinglePicklist\" && !(doc.__islocal)",
+   "fieldname": "dependent",
+   "fieldtype": "Table MultiSelect",
+   "label": "Dependent",
+   "options": "MItems Configuration Table"
+  },
+  {
+   "fetch_from": "mitems.payortype",
+   "fieldname": "payor_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Payor Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "mitems.assessment_type",
+   "fieldname": "assessment_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Assessment Type",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.picklist == \"SinglePicklist\" && !(doc.__islocal)",
+   "fieldname": "special_include",
+   "fieldtype": "Table MultiSelect",
+   "label": "Special Include Case",
+   "options": "MItems Configuration Table"
+  },
+  {
+   "fieldname": "column_break_mskn1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "SinglePicklist",
+   "depends_on": "eval:doc.mitems",
+   "fieldname": "picklist",
+   "fieldtype": "Select",
+   "label": "Picklist",
+   "options": "\nSinglePicklist\nMultiple Pick-List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-20 11:20:28.417595",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "MItems Configuration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WMS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Department Head",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operations Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "mitem_name"
+}

@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "autoname": "field:work_allocation",
+ "creation": "2023-01-04 12:44:16.936752",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_allocation",
+  "arrived_date",
+  "payor_type",
+  "payor_type_hchb",
+  "date",
+  "column_break_3",
+  "mr_number",
+  "work_flow_state",
+  "coder_name",
+  "assessment_type",
+  "section_break_6",
+  "wa_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_allocation",
+   "fieldtype": "Data",
+   "label": "Work Allocation",
+   "unique": 1
+  },
+  {
+   "fieldname": "arrived_date",
+   "fieldtype": "Datetime",
+   "label": "Arrived Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coder_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Coder Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wa_history",
+   "fieldtype": "Table",
+   "label": "WA History",
+   "options": "Activit History",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mr_number",
+   "fieldtype": "Data",
+   "label": "MR Number",
+   "report_hide": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payor_type",
+   "fieldtype": "Data",
+   "label": "Payor Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Data",
+   "label": "Assessment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payor_type_hchb",
+   "fieldtype": "Data",
+   "label": "Payor Type (As per HCHB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_flow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Chart Status",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-16 12:50:02.476046",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Work Allocation Activity History",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

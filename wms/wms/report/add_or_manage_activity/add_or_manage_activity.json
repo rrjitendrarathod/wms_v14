@@ -1,0 +1,32 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-01-06 10:59:22.221182",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-12-19 11:16:53.220196",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Add or Manage Activity",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Bulk Upload Activities",
+ "report_name": "Add or Manage Activity",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Production TL"
+  },
+  {
+   "role": "WMS Manager"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.workflow_state==\"Coder 2nd Level Appeal\" or doc.workflow_state==\"Coder Error Rejected  by L1 supervisor-Post QA TL Feedback\"",
+ "creation": "2022-11-18 09:19:56.271457",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Medical Coder Flow",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-12 14:41:28.324897",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "Operations Manager System Notifications",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Operations Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.mr_number }} - {{doc.workflow_state}}",
+ "value_changed": "workflow_state"
+}

@@ -1,0 +1,218 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"U4KA0YZm3O\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">WMS</span>\",\"col\":12}},{\"id\":\"y33IKyjtCg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Production Completed\",\"col\":4}},{\"id\":\"Qj_JFMFYC0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Quality\",\"col\":4}},{\"id\":\"2k6VoSxG_n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Chart Locked\",\"col\":4}},{\"id\":\"k7ULS-BdEK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"21WvW9ldBG\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KreRY4gFKi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inbox\",\"col\":3}},{\"id\":\"O6BnTPhKUn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ToDo\",\"col\":3}},{\"id\":\"D6uaArdYwc\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Id_qsQbcFA\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters &amp; Reports<br></b></span>\",\"col\":12}},{\"id\":\"bh4GbhD0xF\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}},{\"id\":\"yCgjnT9Nhu\",\"type\":\"card\",\"data\":{\"card_name\":\"Activity\",\"col\":4}},{\"id\":\"Ky5zGvsKtO\",\"type\":\"card\",\"data\":{\"card_name\":\"ToDo - Inbox\",\"col\":4}},{\"id\":\"LQnJa6jIK_\",\"type\":\"card\",\"data\":{\"card_name\":\"Activity History\",\"col\":4}},{\"id\":\"NTbWg3LeY1\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2023-10-10 14:21:08.546560",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "sell",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "WMS",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hold Reason",
+   "link_count": 0,
+   "link_to": "Hold Reason",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ToDo - Inbox",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ToDo",
+   "link_count": 0,
+   "link_to": "ToDo",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inbox",
+   "link_count": 0,
+   "link_to": "Medical Coder Flow",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bulk Upload",
+   "link_count": 0,
+   "link_to": "Data Import",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Add or Manage Activity",
+   "link_count": 0,
+   "link_to": "Bulk Upload Activities",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity History",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity History",
+   "link_count": 0,
+   "link_to": "Work Allocation Activity History",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Work Allocation Report",
+   "link_count": 0,
+   "link_to": "Work Allocation Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "QA Work Allocation Report",
+   "link_count": 0,
+   "link_to": "Medical Coder FLow",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "WMS Hierarchy Report",
+   "link_count": 0,
+   "link_to": "Hierarchy Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "QA Weightage Report",
+   "link_count": 0,
+   "link_to": "QA Weightage",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hold Reason",
+   "link_count": 0,
+   "link_to": "Hold Reason",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Technical Issue",
+   "link_count": 0,
+   "link_to": "Technical Issue",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-06 14:23:05.695157",
+ "modified_by": "Administrator",
+ "module": "Wms",
+ "name": "WMS",
+ "number_cards": [
+  {
+   "label": "Chart Locked",
+   "number_card_name": "Chart Locked"
+  },
+  {
+   "label": "Pending Quality",
+   "number_card_name": "Pending Quality"
+  },
+  {
+   "label": "Production Completed",
+   "number_card_name": "Productioin Completed"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 17.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "ToDo",
+   "link_to": "ToDo",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Inbox",
+   "link_to": "Medical Coder Flow",
+   "type": "DocType"
+  }
+ ],
+ "title": "WMS"
+}
